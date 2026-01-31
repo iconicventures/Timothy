@@ -216,6 +216,7 @@ ul {
     font-weight: 600;
     color: var(--primary-color);
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .logo-text small {
@@ -225,10 +226,10 @@ ul {
 }
 
 .logo-img {
-    height: 55px !important;
+    height: 70px !important;
     width: auto !important;
-    max-width: 160px !important;
-    max-height: 55px !important;
+    max-width: 200px !important;
+    max-height: 70px !important;
     object-fit: contain;
     display: block;
 }
