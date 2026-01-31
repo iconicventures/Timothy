@@ -368,6 +368,35 @@ ul {
 
 .hero-buttons .btn {
     cursor: pointer;
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-dark);
+    border: 2px solid var(--secondary-color);
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: var(--secondary-light);
+    border-color: var(--secondary-light);
+}
+
+.hero-buttons .btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
 }
 
 .hero-indicators {
