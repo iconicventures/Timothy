@@ -321,15 +321,21 @@ ul {
     transition: opacity 1s ease;
     display: flex;
     align-items: center;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .hero-slide.active {
     opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
 }
 
 .hero-content {
     max-width: 700px;
     color: #ffffff;
+    position: relative;
+    z-index: 3;
 }
 
 .hero-content h1 {
@@ -356,6 +362,12 @@ ul {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 4;
+}
+
+.hero-buttons .btn {
+    cursor: pointer;
 }
 
 .hero-indicators {
