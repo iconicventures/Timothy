@@ -224,16 +224,18 @@ ul {
 }
 
 .logo-img {
-    height: 60px;
+    height: 50px;
     width: auto;
+    max-width: 180px;
     object-fit: contain;
 }
 
 .footer-logo-img {
-    height: 80px;
+    height: 70px;
+    max-width: 220px;
     background-color: #ffffff;
-    padding: 8px;
-    border-radius: 8px;
+    padding: 5px;
+    border-radius: 6px;
 }
 
 .nav-menu {
@@ -853,6 +855,16 @@ ul {
 @media (max-width: 768px) {
     h1 { font-size: 2.25rem; }
     h2 { font-size: 2rem; }
+
+    .logo-img {
+        height: 40px;
+        max-width: 140px;
+    }
+
+    .footer-logo-img {
+        height: 60px;
+        max-width: 180px;
+    }
 
     .top-bar-content {
         flex-direction: column;
