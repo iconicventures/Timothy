@@ -223,6 +223,19 @@ ul {
     color: var(--text-light);
 }
 
+.logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-logo-img {
+    height: 80px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
