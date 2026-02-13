@@ -172,6 +172,45 @@ ul {
     opacity: 0.8;
 }
 
+/* Moving Ribbon */
+.ribbon {
+    background-color: var(--secondary-color);
+    color: var(--primary-dark);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
+
+.ribbon-track {
+    display: inline-block;
+    animation: ribbon-scroll 25s linear infinite;
+}
+
+.ribbon-item {
+    padding: 0 1rem;
+}
+
+.ribbon-separator {
+    padding: 0 0.5rem;
+    opacity: 0.6;
+}
+
+@keyframes ribbon-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ribbon:hover .ribbon-track {
+    animation-play-state: paused;
+}
+
 /* Header & Navigation */
 .header {
     background-color: var(--background-color);
