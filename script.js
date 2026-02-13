@@ -153,30 +153,20 @@ function initContactForm() {
     if (!form) return;
 
     form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Get form data
+        // Get form data for validation
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // Basic validation
+        // Basic validation - prevent submission if invalid
         if (!validateForm(data)) {
+            e.preventDefault();
             return;
         }
 
-        // Simulate form submission
+        // Show sending state
         const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
-
-        // Simulate API call
-        setTimeout(() => {
-            showFormMessage('success', 'Thank you for your message! We will get back to you shortly.');
-            form.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 1500);
     });
 }
 
