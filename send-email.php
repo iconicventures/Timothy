@@ -54,17 +54,20 @@ $body .= "Phone: $phone\n";
 $body .= "Service of Interest: $service\n\n";
 $body .= "Message:\n$message\n";
 
-$headers  = "From: noreply@tgfinancial.ca\r\n";
+// Use info@tgfinancial.ca as From (must be a real mailbox on Hostinger)
+$headers  = "From: info@tgfinancial.ca\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
-// Send the email
-$sent = mail($to, $subject, $body, $headers);
+// Send the email using -f flag to set envelope sender
+$sent = mail($to, $subject, $body, $headers, '-f info@tgfinancial.ca');
 
 if ($sent) {
     echo json_encode(['success' => true, 'message' => 'Your message has been sent successfully!']);
 } else {
+    // Log the error for debugging
+    error_log("Contact form mail() failed for: $email");
     http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Failed to send message. Please try calling us instead.']);
+    echo json_encode(['success' => false, 'message' => 'Failed to send message. Please try calling us at (672) 967-8000.']);
 }
