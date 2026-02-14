@@ -153,44 +153,20 @@ function initContactForm() {
     if (!form) return;
 
     form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
         // Get form data for validation
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // Basic validation
+        // Basic validation - prevent submission if invalid
         if (!validateForm(data)) {
+            e.preventDefault();
             return;
         }
 
-        // Show sending state
+        // Show sending state (form will submit normally to FormSubmit.co)
         const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
-
-        // Send via PHP on Hostinger
-        fetch('https://tgfinancial.ca/send-email.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(function(response) { return response.json(); })
-        .then(function(result) {
-            if (result.success) {
-                showFormMessage('success', 'Thank you! Your message has been sent successfully. We\'ll get back to you shortly.');
-                form.reset();
-            } else {
-                showFormMessage('error', result.message || 'Something went wrong. Please try again.');
-            }
-        })
-        .catch(function() {
-            showFormMessage('error', 'Failed to send message. Please try calling us at (672) 967-8000.');
-        })
-        .finally(function() {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        });
     });
 }
 
