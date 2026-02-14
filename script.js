@@ -170,8 +170,8 @@ function initContactForm() {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Send via AJAX
-        fetch('send-email.php', {
+        // Send via AJAX to Hostinger server
+        fetch('https://tgfinancial.ca/send-email.php', {
             method: 'POST',
             body: formData
         })
