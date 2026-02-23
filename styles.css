@@ -223,6 +223,32 @@ ul {
     animation-play-state: paused;
 }
 
+/* Tax Season Announcement Banner */
+.tax-season-banner {
+    background-color: #f5f5f5;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tax-season-banner p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.tax-season-banner a {
+    color: #e67e00;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.tax-season-banner a:hover {
+    color: #cc6f00;
+    text-decoration: underline;
+}
+
 /* Header & Navigation */
 .header {
     background-color: var(--background-color);
