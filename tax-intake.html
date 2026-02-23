@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="T1 Tax Intake Form - Timothy Grant Financial. Complete this form to start your personal tax preparation.">
+    <title>T1 Tax Intake Form | Timothy Grant Financial</title>
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="T1 Tax Intake Form | Timothy Grant Financial">
+    <meta property="og:description" content="Complete our online tax intake form to get started with your personal tax preparation.">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:url" content="https://tgfinancial.ca/tax-intake.html">
+
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span class="top-bar-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Unit A 108 7th Avenue South, Cranbrook, BC V1C 2J4
+                    </span>
+                    <span class="top-bar-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        (672) 967-8000 | (250) 420-6880 | 1-866-522-7623
+                    </span>
+                </div>
+                <div class="top-bar-right">
+                    <span class="top-bar-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        Mon - Fri: 9:00 AM - 7:00 PM | Sat: 10:00 AM - 5:00 PM | Sun: 12:00 PM - 5:00 PM
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpg" alt="Timothy Grant Financial" class="logo-img" decoding="async">
+                    <span class="logo-text">Timothy Grant Financial</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Our Services</a></li>
+                    <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li><a href="tax-intake.html" class="nav-link active">Tax Intake Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Tax Intake Form Section -->
+    <section class="intake-form-section">
+        <div class="container">
+            <div class="intake-form-header">
+                <div class="intake-logo">
+                    <img src="images/logo.jpg" alt="TGF Logo" decoding="async">
+                </div>
+                <div class="intake-title">
+                    <h1>T1 INTAKE FORM</h1>
+                    <p class="form-subtitle">Personal Tax Preparation</p>
+                </div>
+                <div class="intake-date">
+                    <label>Today's Date:</label>
+                    <input type="date" id="today-date" name="today_date" readonly>
+                </div>
+            </div>
+
+            <form id="tax-intake-form" class="tax-intake-form" action="https://formsubmit.co/info@tgfinancial.ca" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New T1 Tax Intake Form Submission">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://tgfinancial.ca/thankyou.html">
+                <input type="hidden" name="_template" value="table">
+
+                <!-- New Client Section -->
+                <div class="form-section cyan-header">
+                    <h3>IF NEW CLIENT VIEW PICTURE IDENTIFICATION</h3>
+                </div>
+                <div class="form-row checkbox-row">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="confirm_cra_access" value="yes">
+                        <span>CONFIRM CRA Access</span>
+                    </label>
+                    <span class="or-text">or</span>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="obtain_cra_access" value="yes">
+                        <span>OBTAIN CRA Access - Attach Signed Authorization</span>
+                    </label>
+                </div>
+
+                <!-- Tax Years Section -->
+                <div class="form-section cyan-header">
+                    <h3>Tax Preparation Required for the following Year(s)</h3>
+                </div>
+                <div class="form-row tax-years-row">
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2025">
+                        <span>2025</span>
+                    </label>
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2024">
+                        <span>2024</span>
+                    </label>
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2023">
+                        <span>2023</span>
+                    </label>
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2022">
+                        <span>2022</span>
+                    </label>
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2021">
+                        <span>2021</span>
+                    </label>
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2020">
+                        <span>2020</span>
+                    </label>
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2019">
+                        <span>2019</span>
+                    </label>
+                    <label class="checkbox-label year-checkbox">
+                        <input type="checkbox" name="tax_years[]" value="2018">
+                        <span>2018</span>
+                    </label>
+                </div>
+                <p class="form-note"><strong>50% Deposit Required if more than 2 years</strong></p>
+
+                <div class="form-row yes-no-row">
+                    <span class="question-text">Is this your first time filing an income tax return with the CRA?</span>
+                    <div class="yes-no-options">
+                        <label class="radio-label">
+                            <input type="radio" name="first_time_filing" value="yes">
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="first_time_filing" value="no">
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Personal Information - Taxpayer -->
+                <div class="form-section cyan-header">
+                    <h3>Personal Information - Taxpayer</h3>
+                </div>
+                <div class="personal-info-grid">
+                    <div class="form-group">
+                        <label for="taxpayer_name">Name (M/F) *</label>
+                        <input type="text" id="taxpayer_name" name="taxpayer_name" required placeholder="Full Legal Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_gender">Gender</label>
+                        <select id="taxpayer_gender" name="taxpayer_gender">
+                            <option value="">Select</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="X">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="taxpayer_address">Full Address *</label>
+                        <input type="text" id="taxpayer_address" name="taxpayer_address" required placeholder="Street Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_city">City</label>
+                        <input type="text" id="taxpayer_city" name="taxpayer_city" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_province">Province</label>
+                        <select id="taxpayer_province" name="taxpayer_province">
+                            <option value="">Select Province</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="AB">Alberta</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="ON">Ontario</option>
+                            <option value="QC">Quebec</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="YT">Yukon</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_postal">Postal Code</label>
+                        <input type="text" id="taxpayer_postal" name="taxpayer_postal" placeholder="V1C 2J4" maxlength="7">
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_sin">SIN *</label>
+                        <input type="text" id="taxpayer_sin" name="taxpayer_sin" required placeholder="000-000-000" maxlength="11" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{3}">
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_phone">Phone # *</label>
+                        <input type="tel" id="taxpayer_phone" name="taxpayer_phone" required placeholder="(000) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_email">Email *</label>
+                        <input type="email" id="taxpayer_email" name="taxpayer_email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_dob">Date of Birth *</label>
+                        <input type="date" id="taxpayer_dob" name="taxpayer_dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taxpayer_dtc">Disability Tax Credit (DTC)?</label>
+                        <select id="taxpayer_dtc" name="taxpayer_dtc">
+                            <option value="">Select</option>
+                            <option value="Y">Yes</option>
+                            <option value="N">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Marital Status -->
+                <div class="form-section cyan-header">
+                    <h3>Marital Status</h3>
+                </div>
+                <div class="form-row marital-status-row">
+                    <label class="radio-label">
+                        <input type="radio" name="marital_status" value="single">
+                        <span>Single</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="marital_status" value="married">
+                        <span>Married</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="marital_status" value="common_law">
+                        <span>Common Law</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="marital_status" value="separated">
+                        <span>Separated</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="marital_status" value="divorced">
+                        <span>Divorced</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="marital_status" value="widower">
+                        <span>Widow/er</span>
+                    </label>
+                </div>
+                <div class="form-group inline-group">
+                    <label for="marital_change_date">Year/Month of change (if applicable):</label>
+                    <input type="month" id="marital_change_date" name="marital_change_date">
+                </div>
+
+                <!-- Personal Information - Spouse/Partner -->
+                <div class="form-section cyan-header">
+                    <h3>Personal Information - Spouse/Partner (if applicable)</h3>
+                </div>
+                <div class="personal-info-grid">
+                    <div class="form-group">
+                        <label for="spouse_name">Name (M/F)</label>
+                        <input type="text" id="spouse_name" name="spouse_name" placeholder="Full Legal Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_gender">Gender</label>
+                        <select id="spouse_gender" name="spouse_gender">
+                            <option value="">Select</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="X">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="spouse_address">Full Address</label>
+                        <input type="text" id="spouse_address" name="spouse_address" placeholder="Street Address (if different)">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_city">City</label>
+                        <input type="text" id="spouse_city" name="spouse_city" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_province">Province</label>
+                        <select id="spouse_province" name="spouse_province">
+                            <option value="">Select Province</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="AB">Alberta</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="ON">Ontario</option>
+                            <option value="QC">Quebec</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="YT">Yukon</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_postal">Postal Code</label>
+                        <input type="text" id="spouse_postal" name="spouse_postal" placeholder="V1C 2J4" maxlength="7">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_sin">SIN</label>
+                        <input type="text" id="spouse_sin" name="spouse_sin" placeholder="000-000-000" maxlength="11">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_phone">Phone #</label>
+                        <input type="tel" id="spouse_phone" name="spouse_phone" placeholder="(000) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_email">Email</label>
+                        <input type="email" id="spouse_email" name="spouse_email" placeholder="spouse@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_dob">Date of Birth</label>
+                        <input type="date" id="spouse_dob" name="spouse_dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="spouse_dtc">Disability Tax Credit (DTC)?</label>
+                        <select id="spouse_dtc" name="spouse_dtc">
+                            <option value="">Select</option>
+                            <option value="Y">Yes</option>
+                            <option value="N">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Moving & Real Estate Questions -->
+                <div class="form-section cyan-header">
+                    <h3>Moving & Real Estate</h3>
+                </div>
+                <div class="questions-section">
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Did you move at least 40KM closer to attend school full time or for employment (incl. self)?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="moved_40km" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="moved_40km" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, complete and attach CRA Form T1-M</p>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Did you sell or change use of any real estate during any year taxes are being prepared for?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="real_estate_change" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="real_estate_change" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If a principal residence, complete and attach CRA Form T2091</p>
+                </div>
+
+                <!-- Dependants Section -->
+                <div class="form-section cyan-header">
+                    <h3>Dependants (Use additional notes section if more space is required)</h3>
+                </div>
+                <div class="dependants-table-container">
+                    <table class="dependants-table">
+                        <thead>
+                            <tr>
+                                <th>Full Name (M/F)</th>
+                                <th>DOB (MM/DD/YYYY)</th>
+                                <th>SIN (if app)</th>
+                                <th>CTB</th>
+                                <th>DTCr</th>
+                                <th>EZSpouse</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" name="dependant1_name" placeholder="Full Name"></td>
+                                <td><input type="date" name="dependant1_dob"></td>
+                                <td><input type="text" name="dependant1_sin" placeholder="SIN" maxlength="11"></td>
+                                <td><input type="checkbox" name="dependant1_ctb" value="yes"></td>
+                                <td><input type="checkbox" name="dependant1_dtcr" value="yes"></td>
+                                <td><input type="checkbox" name="dependant1_ezspouse" value="yes"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="dependant2_name" placeholder="Full Name"></td>
+                                <td><input type="date" name="dependant2_dob"></td>
+                                <td><input type="text" name="dependant2_sin" placeholder="SIN" maxlength="11"></td>
+                                <td><input type="checkbox" name="dependant2_ctb" value="yes"></td>
+                                <td><input type="checkbox" name="dependant2_dtcr" value="yes"></td>
+                                <td><input type="checkbox" name="dependant2_ezspouse" value="yes"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="dependant3_name" placeholder="Full Name"></td>
+                                <td><input type="date" name="dependant3_dob"></td>
+                                <td><input type="text" name="dependant3_sin" placeholder="SIN" maxlength="11"></td>
+                                <td><input type="checkbox" name="dependant3_ctb" value="yes"></td>
+                                <td><input type="checkbox" name="dependant3_dtcr" value="yes"></td>
+                                <td><input type="checkbox" name="dependant3_ezspouse" value="yes"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="dependant4_name" placeholder="Full Name"></td>
+                                <td><input type="date" name="dependant4_dob"></td>
+                                <td><input type="text" name="dependant4_sin" placeholder="SIN" maxlength="11"></td>
+                                <td><input type="checkbox" name="dependant4_ctb" value="yes"></td>
+                                <td><input type="checkbox" name="dependant4_dtcr" value="yes"></td>
+                                <td><input type="checkbox" name="dependant4_ezspouse" value="yes"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Please Answer The Following Questions -->
+                <div class="form-section cyan-header">
+                    <h3>PLEASE ANSWER THE FOLLOWING QUESTIONS</h3>
+                </div>
+                <div class="questions-section">
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Are you a Canadian Citizen?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="canadian_citizen" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="canadian_citizen" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">If yes, do you authorize the CRA to provide your name, address, date of birth, and citizenship to Elections Canada to update the Register of Future Electors?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="elections_canada_auth" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="elections_canada_auth" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group inline-group">
+                        <label>If you became a resident of Canada in 2025, please enter date of entry:</label>
+                        <input type="month" name="residency_entry_date" placeholder="YYYY/MM">
+                    </div>
+
+                    <div class="form-group inline-group">
+                        <label>If you ceased to be a resident of Canada in 2025, please enter date of departure:</label>
+                        <input type="month" name="residency_departure_date" placeholder="YYYY/MM">
+                    </div>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you have income that is exempt under the Indian Act?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="indian_act_exempt" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="indian_act_exempt" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, complete Form T90 Income Exempt from Tax Under the Indian Act.</p>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you share title/ownership with a 3rd party (property, bank, trust)?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="third_party_ownership" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="third_party_ownership" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, a T3 tax return may also be required.</p>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you qualify to claim Employment Expenses?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="employment_expenses" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="employment_expenses" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, complete and attach CRA Form #T777 and T2200</p>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you qualify to claim Meals and Lodging Expenses?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="meals_lodging_expenses" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="meals_lodging_expenses" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, complete and attach CRA Form #TL2</p>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you consent to share contact information only - Organ and tissue donor registry (BC)?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="organ_donor_consent" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="organ_donor_consent" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you have any medical travel expenses over 40 KM?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="medical_travel_expenses" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="medical_travel_expenses" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, attach receipts and complete Medical Travel Expenses Summary Report</p>
+                </div>
+
+                <!-- Self-Employment Section -->
+                <div class="form-section cyan-header">
+                    <h3>Self-Employment</h3>
+                </div>
+                <div class="questions-section">
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you own a business as a sole proprietor or partnership?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="self_employed" value="sole_proprietor">
+                                <span>Sole Proprietor</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="self_employed" value="partnership">
+                                <span>Partnership</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="self_employed" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, list each business separately. <strong>NB: Please provide CRA access.</strong></p>
+
+                    <div class="business-info-grid">
+                        <div class="form-group">
+                            <label for="business_name">Business Name:</label>
+                            <input type="text" id="business_name" name="business_name" placeholder="Business Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="business_gst_number">Business Number for GST:</label>
+                            <input type="text" id="business_gst_number" name="business_gst_number" placeholder="GST Number">
+                        </div>
+                    </div>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you wish us to prepare any GST returns for this tax year?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="prepare_gst" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="prepare_gst" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you wish us to prepare any PST returns for this tax year?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="prepare_pst" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="prepare_pst" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Do you wish us to prepare any WCB returns for this tax year?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="prepare_wcb" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="prepare_wcb" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="partner_names">Full Legal Names of Partner(s) (if Partnership):</label>
+                        <input type="text" id="partner_names" name="partner_names" placeholder="Partner Names">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="partner_sins">Partner Social Insurance Number(s):</label>
+                        <input type="text" id="partner_sins" name="partner_sins" placeholder="Partner SINs">
+                    </div>
+                </div>
+
+                <!-- Rental Income Section -->
+                <div class="form-section cyan-header">
+                    <h3>Rental Income and Expenses</h3>
+                </div>
+                <div class="questions-section">
+                    <div class="form-group full-width">
+                        <label for="rental_properties">Please list the full address for each rental property owned (Include Street/City/Prov/PC):</label>
+                        <textarea id="rental_properties" name="rental_properties" rows="3" placeholder="Enter rental property addresses..."></textarea>
+                    </div>
+
+                    <p class="form-subtitle-text">If the above property is owned with a partner, please list the following for each partner:</p>
+                    <div class="rental-partner-grid">
+                        <div class="form-group">
+                            <label for="rental_partner_name">Full Name:</label>
+                            <input type="text" id="rental_partner_name" name="rental_partner_name" placeholder="Partner Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="rental_partner_sin">SIN:</label>
+                            <input type="text" id="rental_partner_sin" name="rental_partner_sin" placeholder="000-000-000" maxlength="11">
+                        </div>
+                        <div class="form-group">
+                            <label for="rental_partner_ownership">% of ownership:</label>
+                            <input type="text" id="rental_partner_ownership" name="rental_partner_ownership" placeholder="50%">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deceased Person Section -->
+                <div class="form-section cyan-header">
+                    <h3>Is this a return for a Deceased Person?</h3>
+                </div>
+                <div class="questions-section">
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Is this a return for a deceased person?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="deceased_return" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="deceased_return" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="form-hint">If yes, please complete the personal information section for the deceased person. Attach a copy of the Death Certificate and a copy of the Will. If no will was made, attach a copy of the Grant of Probate.</p>
+
+                    <div class="form-row yes-no-row">
+                        <span class="question-text">Is a list of beneficiaries information required?</span>
+                        <div class="yes-no-options">
+                            <label class="radio-label">
+                                <input type="radio" name="beneficiaries_required" value="yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="beneficiaries_required" value="no">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executor Information -->
+                <div class="form-section cyan-header">
+                    <h3>Complete the following information for each executor:</h3>
+                </div>
+                <div class="executor-info-grid">
+                    <div class="form-group">
+                        <label for="executor_name">Full Legal Name:</label>
+                        <input type="text" id="executor_name" name="executor_name" placeholder="Executor Name">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="executor_address">Full Mailing Address:</label>
+                        <input type="text" id="executor_address" name="executor_address" placeholder="Street Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="executor_city">City/Prov/PC:</label>
+                        <input type="text" id="executor_city" name="executor_city" placeholder="City, Province, Postal Code">
+                    </div>
+                    <div class="form-group">
+                        <label for="executor_phone">Phone #:</label>
+                        <input type="tel" id="executor_phone" name="executor_phone" placeholder="(000) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="executor_email">Email:</label>
+                        <input type="email" id="executor_email" name="executor_email" placeholder="executor@email.com">
+                    </div>
+                </div>
+
+                <!-- Notes Section -->
+                <div class="form-section cyan-header">
+                    <h3>NOTES to Preparer</h3>
+                </div>
+                <div class="form-group full-width">
+                    <label for="notes_to_preparer">Additional notes, forms supplied, or special instructions:</label>
+                    <textarea id="notes_to_preparer" name="notes_to_preparer" rows="5" placeholder="Enter any additional information or notes here..."></textarea>
+                </div>
+
+                <!-- Privacy & Submit -->
+                <div class="form-section">
+                    <div class="privacy-notice">
+                        <p><strong>Privacy Notice:</strong> The information collected on this form will be used solely for the purpose of preparing your tax return. Your personal information will be kept confidential and secure in accordance with applicable privacy laws.</p>
+                    </div>
+                    <label class="checkbox-label consent-checkbox">
+                        <input type="checkbox" name="consent" value="yes" required>
+                        <span>I confirm that the information provided is accurate and complete to the best of my knowledge. *</span>
+                    </label>
+                </div>
+
+                <div class="form-submit-section">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Tax Intake Form</button>
+                </div>
+
+                <!-- Footer -->
+                <div class="intake-form-footer">
+                    <p>&copy; 2026 - Form T1 Intake - R-0</p>
+                    <p>Timothy Grant Financial</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.jpg" alt="Timothy Grant Financial" class="logo-img footer-logo-img" loading="lazy" decoding="async">
+                    </a>
+                    <p>Your trusted partner for comprehensive tax planning for individuals and businesses in Cranbrook, BC and throughout the Kootenay Region. All are welcome! We want your business!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="tax-intake.html">Tax Intake Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Tax Services</a></li>
+                        <li><a href="index.html#services">Financial Planning</a></li>
+                        <li><a href="index.html#services">Investment Management</a></li>
+                        <li><a href="index.html#services">Retirement Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Unit A 108 7th Avenue South<br>Cranbrook, BC V1C 2J4</p>
+                    <p><a href="tel:+16729678000">(672) 967-8000</a><br>
+                    <a href="tel:+12504206880">(250) 420-6880</a><br>
+                    <a href="tel:+18665227623">1-866-522-7623</a></p>
+                    <p><a href="mailto:info@tgfinancial.ca">info@tgfinancial.ca</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Timothy Grant Financial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Auto-fill today's date
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('today-date').value = today;
+        });
+    </script>
+</body>
+</html>
